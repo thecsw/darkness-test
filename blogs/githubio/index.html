@@ -34,7 +34,6 @@
 
 <script type="module">document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");</script>
 <script async src="https://sandyuraz.com//scripts/time.js"></script>
-
 <title>Your Domains and Github Pages 🦉</title>
 </head>
 <link rel="stylesheet" type="text/css" href="https://sandyuraz.com/darkness-test/css/asciidoctor.css">
@@ -63,9 +62,21 @@
 <div class="paragraph">
 <p>Let&#39;s say you bought your domain <code>myname.com</code>. First thing to do, go to your domain dashboard and set the following in your domain&#39;s custom records: </p>
 </div>
-<div class="paragraph">
-<p>| Name | Type  | TTL | Data              | |------+-------+-----+-------------------| | <code>@</code>    | <code>A</code>     | <code>1h</code>  | <code>185.199.108.153</code>   | |      |       |     | <code>185.199.109.153</code>   | |      |       |     | <code>185.199.110.153</code>   | |      |       |     | <code>185.199.111.153</code>   | | <code>www</code>  | <code>CNAME</code> | <code>1h</code>  | <code>myname.github.io.</code> | </p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight">
+<code class="language-" data-lang="">| Name | Type  | TTL |              Data |
+|------+-------+-----+-------------------|
+| @    | A     | 1h  |   185.199.108.153 |
+|      |       |     |   185.199.109.153 |
+|      |       |     |   185.199.110.153 |
+|      |       |     |   185.199.111.153 |
+| www  | CNAME | 1h  | myname.github.io. |
+</code>
+</pre>
 </div>
+</div>
+
 <div class="paragraph">
 <p>After that, go to your <code>myname.github.io</code> repo&#39;s settings and in the section <strong>Github Pages</strong>, fill in your custom domain and tick the <strong>Enforce HTTPS</strong> option. Now, just wait. You might get bad redirects, bad certificates, etc. Give it couple of minutes up to an hour to start working properly. </p>
 </div>
