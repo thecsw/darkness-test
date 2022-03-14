@@ -1,0 +1,10 @@
+# Ignore my emacs backup directory
+.saves
+.astrie
+astrie
+temp.sed
+.DS_Store
+ltximg
+
+# ignore folder
+git-ignore
